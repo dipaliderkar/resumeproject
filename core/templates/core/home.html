@@ -1,0 +1,24 @@
+{% extends 'core/base.html' %}
+{% load static %}
+{% block content %} 
+<div class=" mt-5 ">
+    <div class="text-center">
+        <img src="{% static 'core/images/resume.jpg' %}" alt="profilepic" class="img-thumbnail" 
+        width="250px" height="150px" >  
+    </div>
+    
+    <div class="text-white mt-5 mx-5 text-justfy">
+        <h1 class="font-weight-bold st-font">Hellow,</h1>
+        <div class="px-4" style="line-height:2rem ">
+            <p style="text-indent:100px;">I am <b class="text-warning"> Dipali Derkar</b> by a proffesion i'm Electrical Engineer.I have completed my graduation from JDIET Yavatmal in academic 
+                year sept 2020.I have completed my Apprenticeship of 1 year period in automoblei industry. During this period i came to know about growth and future of Internet of thing.which 
+                attract me to learn about informatio and technology.I have completed course of<b class="text-warning"> python development</b> from prepbytes.</p><p>More than basics,i gained knowledge
+                of python development and worked on related task during this course.My aim is to achieve a better position in IOT base field where I can learn future building programs and connect such a organiztion which is growing upword with the contribution of my effort</p>
+        </div>
+    </div>
+    <div class="text-center">
+        <a href="{% url 'contact'%}" class="btn btn-outline-warning mt-3 mt-5">Hire me</a>
+        <a href="{% url 'contact'%}" class="btn btn-outline-info mt-5">Contact me</a>
+    </div>
+</div>
+{% endblock content %}
